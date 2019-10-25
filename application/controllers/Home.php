@@ -74,7 +74,9 @@ class Home extends CI_Controller
             'id_fb' => $this->input->post('fb'),
             'id_twitter' => $this->input->post('twitter'),
             'id_address' => $this->input->post('address'),
-            'id_github' => $this->input->post('github')
+            'id_github' => $this->input->post('github'),
+            'id_profile' => $this->input->post('profile')
+
         );
         $this->db->update('tbl_id', $data, ['id_id' => $id]);
         redirect('home');

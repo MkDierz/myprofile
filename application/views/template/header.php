@@ -39,21 +39,38 @@ body {
 header {
     /*Strictly Necessary */
     position: fixed;
-    width: 75%;
-    height: 20px; /*Adjust the hight to your purposes*/
+    width: 100%;
+    height: auto    ; /*Adjust the hight to your purposes*/
     /*Aesthetics*/
     background: lightSalmon;
     padding: 10px;
     overflow-y:hidden;
 }
+spacer{
+    
+}
+header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+header a:hover {
+    background-color: #000;
+}
+.active {
+    background-color: #4CAF50;
+}
 .ContentBox{
-    margin-top: 40px; /*The height of the   header*/
+    margin-top: 20px; /*The height of the   header*/
     display:flex;
     flex-flow: row wrap;
 }
 main, section, footer {
     /*Aesthetics*/
-    background: lightgray;
+    background: aliceblue;
     /* padding: 20px; */
 }
 main {
@@ -158,10 +175,7 @@ tr{
         </div>
         <div class="content" id="rightSideWrapper">
             <header>
-                <ul>
-                    <li>
-                        <a href="">Login</a>
-                    </li>
-                </ul>
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
             </header>
             <div  class="ContentBox">

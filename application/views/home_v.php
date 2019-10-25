@@ -1,5 +1,8 @@
     <main>
-    <div id="About" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
+        <div id="About" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
+    <div class="spacer">
+
+    </div>
         About
     </div>
     <?php foreach ($tbl_id->result() as $t) {?>

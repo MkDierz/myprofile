@@ -113,6 +113,13 @@ table{
             </td>
         </tr>
         <tr>
+            <td>Profile pic</td>
+            <td>:</td>
+            <td>
+                <input name="profile" type="text" value="<?php echo $t->id_profile; ?>">
+            </td>
+        </tr>
+        <tr>
             <td><br /></td>
             <td><br /></td>
             <td><br /></td>
