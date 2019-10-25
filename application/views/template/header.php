@@ -39,38 +39,45 @@ body {
 header {
     /*Strictly Necessary */
     position: fixed;
-    width: 100%;
+    width: 74%;
     height: auto    ; /*Adjust the hight to your purposes*/
     /*Aesthetics*/
-    background: lightSalmon;
+    background: #FF3D5A;
     padding: 10px;
     overflow-y:hidden;
+    font-weight: bold;
+
 }
 spacer{
-    
+
 }
 header a {
     float: left;
     text-align: center;
     padding: 12px;
-    color: white;
+    color: #130525;
     text-decoration: none;
     font-size: 17px;
 }
 header a:hover {
-    background-color: #000;
+    background-color: white;
 }
 .active {
-    background-color: #4CAF50;
+    background-color: #FF3D5A;
+}
+.active ul li a{
+    color: #130525;
+
 }
 .ContentBox{
-    margin-top: 20px; /*The height of the   header*/
+    margin-top: 0px; /*The height of the   header*/
     display:flex;
     flex-flow: row wrap;
 }
 main, section, footer {
     /*Aesthetics*/
-    background: aliceblue;
+    background: #0E0A2F;
+
     /* padding: 20px; */
 }
 main {
@@ -78,6 +85,7 @@ main {
     height:auto;
     order: 1;
     flex: 0 1 100%;
+
 }
 section {
     /*Strictly Necessary */
@@ -134,12 +142,19 @@ footer {
 }
 table{
     position:inherit;
+    color: white;
 }
 th {
     text-align: left;
     padding: 20px;
 }
 tr{
+}
+.topnavright {
+  float: right;
+}
+b{
+    color: ghostwhite;
 }
 
 </style>
@@ -173,9 +188,11 @@ tr{
                 </li>
             </ul>
         </div>
-        <div class="content" id="rightSideWrapper">
+        <div class="header" id="rightSideWrapper">
             <header>
                 <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-                <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                <div class="topnavright">
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                </div>
             </header>
             <div  class="ContentBox">

@@ -1,9 +1,9 @@
-    <main>
-        <div id="About" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
-    <div class="spacer">
+<main>
+    <div id="About" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px;height: 20px;" >
 
     </div>
-        About
+    <div  class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px 30px;">
+        <b>About</b>
     </div>
     <?php foreach ($tbl_id->result() as $t) {?>
         <div  class="section"  style="display:flex; flex-direction: row; ; align-items: top;padding: 20px">
@@ -53,8 +53,11 @@
             </div>
         </div>
     <?php } ?>
-    <div id="Education" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
-        Education background
+    <div id="Education" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px;height: 20px;background-color: #0E0A2F " >
+
+    </div>
+    <div id="" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px" >
+        <b>Education background</b>
     </div>
     <?php foreach ($tbl_edu->result() as $e) {?>
         <div  class="section" style="" >
@@ -86,7 +89,10 @@
             </table>
         </div>
     <?php } ?>
-    <div id="Skills" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
+    <div id="Skills" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px;height: 20px;background-color: #0E0A2F " >
+
+    </div>
+    <div id="" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px" >
         Skills
     </div>
     <?php foreach ($tbl_skill->result() as $t) {?>
@@ -121,8 +127,11 @@
             </div>
         </div>
     <?php } ?>
-    <div id="WorkingExperience" class="text-wr" style="width:100%; height: auto;background-color:  #95B6FF; padding: 20px" >
-        Working Experience
+    <div id="WorkingExperience" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px;height: 20px;background-color: #0E0A2F  " >
+
+    </div>
+    <div id="" class="text-wr" style="width:100%; height: auto;background-color:  #DD263E; padding: 20px" >
+        <b>Working Experience</b>
     </div>
     <?php foreach ($tbl_work->result() as $t) {?>
         <div  class="section" style="">
@@ -156,6 +165,6 @@
             </div>
         </div>
     <?php } ?>
-    </main>
-    <section>
-    </section>
+</main>
+<section>
+</section>
