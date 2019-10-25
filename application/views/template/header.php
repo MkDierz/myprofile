@@ -1,8 +1,3 @@
-<?php foreach ($tbl_id->result() as $t) {?>
-
-    <?php echo base_url();"home/edit/";echo $t->id_id;?>
-
-<?php } ?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -43,12 +38,13 @@ body {
 }
 header {
     /*Strictly Necessary */
-    position: absolute;
+    position: fixed;
     width: 75%;
     height: 20px; /*Adjust the hight to your purposes*/
     /*Aesthetics*/
     background: lightSalmon;
     padding: 10px;
+    overflow-y:hidden;
 }
 .ContentBox{
     margin-top: 40px; /*The height of the   header*/
@@ -80,7 +76,7 @@ footer {
 }
 .sidebar .cover{
     height: 200px;
-    background-image: url(asset/image/cover.jpg);
+    background-image: url(<?php echo base_url('asset/image/cover.jpg')?>);
     background-size: cover;
     text-align: center;
     color: white;
@@ -131,32 +127,41 @@ tr{
 
 </style>
 <body>
-    <div class="sidebar" id="sidebar">
-        <div class="cover">
-            <img src="asset/image/avatar.svg" alt="" style="height: 100px">
-            <br>
-            <h>NAME</h>
-            <br>
-            <h>email</h>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="cover">
+                <img src="<?php echo base_url('asset/image/avatar.svg');?>" alt="" style="height: 100px">
+                <br>
+                <?php foreach ($tbl_id->result() as $t) {?>
 
+                    <h><?php echo $t->id_name ;?></h>
+                    <br>
+
+                    <h><?php echo $t->id_nim ;?></h>
+                <?php } ?>
+
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#WorkingExperience">Working Experience</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="#About">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#Education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a href="#Skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a href="#WorkingExperience">Working Experience</a>
-            </li>
-        </ul>
-    </div>
-    <div class="content" id="rightSideWrapper">
-        <header>
-            Header
-        </header>
-        <div  class="ContentBox">
+        <div class="content" id="rightSideWrapper">
+            <header>
+                <ul>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                </ul>
+            </header>
+            <div  class="ContentBox">
